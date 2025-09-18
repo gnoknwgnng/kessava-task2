@@ -1,0 +1,47 @@
+/* Custom CSS for performance optimization */
+
+/* Preload critical fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Optimize images and icons */
+.icon-placeholder {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary-dark) 100%);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Reduce layout shifts */
+.card {
+    min-height: 200px;
+}
+
+.team-card {
+    min-height: 280px;
+}
+
+/* Optimize animations */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Lazy loading placeholder */
+.lazy-placeholder {
+    background: #f8f9fa;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
