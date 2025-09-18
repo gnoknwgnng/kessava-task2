@@ -1,0 +1,120 @@
+{% extends "layout.njk" %}
+
+{% set page = "home" %}
+
+{% block title %}{{ siteName }} - Home{% endblock %}
+
+{% block customStyles %}
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+}
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section - Based on Bootstrap heroes examples -->
+<div class="px-4 py-5 my-5 text-center">
+    <svg class="d-block mx-auto mb-4" width="72" height="57" aria-hidden="true">
+        <use xlink:href="#bootstrap"></use>
+    </svg>
+    <h1 class="display-5 fw-bold text-body-emphasis">Bootstrap 5 Component Showcase</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+            Quickly design and customize responsive mobile-first sites with Bootstrap, 
+            the world's most popular front-end open source toolkit, featuring Sass variables 
+            and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-bd-primary btn-lg px-4 gap-3">
+                Get Started
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                Learn More
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section - Based on Bootstrap features examples -->
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Featured Components</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#collection"></use>
+                </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Rich Components</h3>
+            <p>
+                Extensive library of pre-built components including navbars, cards, forms, and modals. 
+                Everything you need to build modern web applications quickly and efficiently.
+            </p>
+            <a href="about.html" class="btn btn-primary">
+                Learn More
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#speedometer2"></use>
+                </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Lightning Fast</h3>
+            <p>
+                Optimized for performance with minimal CSS and JavaScript. Built with modern web standards 
+                to ensure your sites load quickly across all devices and browsers.
+            </p>
+            <a href="about.html" class="btn btn-primary">
+                Explore Performance
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#toggles2"></use>
+                </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Highly Customizable</h3>
+            <p>
+                Customize Bootstrap to match your brand with Sass variables, extensive color system, 
+                and flexible utility classes. Make it truly yours.
+            </p>
+            <a href="contact.html" class="btn btn-primary">
+                Get Started
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Hero with Image Section - Based on Bootstrap heroes examples -->
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <div class="bg-light rounded-3 p-5 text-center">
+                <svg class="bi text-muted" width="200" height="150" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Responsive left-aligned hero with Bootstrap components
+            </h1>
+            <p class="lead">
+                Quickly design and customize responsive mobile-first sites with Bootstrap, 
+                the world's most popular front-end open source toolkit, featuring Sass variables 
+                and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-bd-primary btn-lg px-4 me-md-2">
+                    Primary
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                    Default
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

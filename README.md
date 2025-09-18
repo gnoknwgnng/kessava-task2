@@ -1,142 +1,248 @@
-# Bootstrap 5 UI Exploration Project
+# 📄 Internship Task 2 – Templating Engine + Bundler Implementation
 
-## Project Overview
-This project demonstrates modern web design using Bootstrap 5 components, creating a responsive and visually appealing multi-page website.
+## 🎯 Project Overview
+This project recreates the Bootstrap 5 UI from Task 1 using modern web development tools: **Nunjucks templating engine** and **Vite bundler**. The implementation demonstrates professional templating practices and efficient build processes while maintaining the exact visual output from the original task.
 
-## 🚀 Live Demo
-- **GitHub Repository**: [Your GitHub URL here]
-- **Live Preview**: [Your GitHub Pages/Netlify URL here]
+## 🛠️ Technology Stack Choices
 
-## 📁 Project Structure
+### Templating Engine: **Nunjucks**
+- **Why Nunjucks?** Powerful templating with inheritance, includes, macros, and filters
+- **Benefits:** Clean separation of content and presentation, reusable components, maintainable code structure
+- **Features Used:** Template inheritance, partials/includes, variables, conditional rendering
+
+### Bundler: **Vite**
+- **Why Vite?** Lightning-fast development server, modern ES modules, optimized builds
+- **Benefits:** Instant hot module replacement, efficient bundling, excellent developer experience
+- **Features Used:** Static site generation, asset optimization, development server
+
+## 📂 Project Structure
 ```
-├── index.html          # Home page with hero section and features
-├── about.html          # About/Services page with team section
-├── contact.html        # Contact page with working form
-└── README.md          # Project documentation
+├── src/
+│   ├── templates/
+│   │   ├── layout.njk              # Base template with common structure
+│   │   └── partials/
+│   │       ├── navbar.njk          # Navigation component
+│   │       ├── footer.njk          # Footer component
+│   │       └── icons.njk           # SVG icon definitions
+│   ├── assets/
+│   │   └── style.css               # Custom CSS styles
+│   ├── index.html                  # Home page template
+│   ├── about.html                  # About/Services page template
+│   └── contact.html                # Contact page template
+├── dist/                           # Compiled output (generated)
+├── package.json                    # Dependencies and scripts
+├── vite.config.js                  # Vite configuration
+└── README.md                       # This file
 ```
 
-## 🛠️ Technologies Used
-- **HTML5** - Semantic markup
-- **Bootstrap 5.3.2** - CSS framework via CDN
-- **Bootstrap Icons** - Icon library
-- **Vanilla JavaScript** - Form handling and interactions
+## 🚀 Quick Start
 
-## ✨ Features Implemented
+### Prerequisites
+- **Node.js** (version 18 or higher)
+- **npm** package manager
 
-### Home Page (index.html)
-- **Responsive Navigation** - Bootstrap navbar with mobile toggle
-- **Hero Section** - Eye-catching banner with call-to-action buttons
-- **Feature Cards** - Grid layout showcasing key benefits
-- **Statistics Section** - Highlighted metrics with contrasting background
-- **Footer** - Social links and copyright information
+### Installation & Usage
 
-### About Page (about.html)
-- **Services Section** - Card-based layout with icons and descriptions
-- **Team Section** - Profile cards with social media links
-- **Call-to-Action** - Encouraging user engagement
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/[your-username]/bootstrap-task2-templating.git
+   cd bootstrap-task2-templating
+   ```
 
-### Contact Page (contact.html)
-- **Contact Form** - Comprehensive form with validation
-- **Contact Information** - Structured contact details in cards
-- **Business Hours** - Clear schedule display
-- **Success Modal** - Bootstrap modal for form submission feedback
-- **Map Placeholder** - Space reserved for future map integration
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## 🎨 Bootstrap Components Used
-- **Navigation** - `.navbar`, `.navbar-expand-lg`, `.navbar-toggler`
-- **Grid System** - `.container`, `.row`, `.col-*` classes
-- **Cards** - `.card`, `.card-body`, `.card-title`
-- **Buttons** - `.btn`, `.btn-primary`, `.btn-outline-*`
-- **Forms** - `.form-control`, `.form-select`, `.form-check`
-- **Modal** - `.modal`, `.modal-dialog`, `.modal-content`
-- **Utilities** - Spacing, colors, shadows, and responsive utilities
+3. **Development mode** (with file watching)
+   ```bash
+   npm run dev
+   ```
 
-## 📱 Responsive Design
-- Mobile-first approach using Bootstrap's grid system
-- Breakpoint considerations for all screen sizes
-- Optimized navigation for mobile devices
-- Flexible card layouts that adapt to screen width
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-## 🔧 Custom Enhancements
-- Custom color scheme using Bootstrap's color utilities
-- Icon integration with Bootstrap Icons
-- Form validation with JavaScript
-- Smooth user experience with modals and transitions
+5. **Preview built files**
+   ```bash
+   npm run preview
+   ```
 
-## 📋 Project Reflection
+6. **Build and serve**
+   ```bash
+   npm run serve
+   ```
 
-### Development Process
-1. **Planning** - Analyzed Bootstrap 5 documentation and examples folder
-2. **AI-Assisted Development** - Used Claude Sonnet 4.0 AI for code generation and guidance
-3. **Structure** - Created semantic HTML structure for all pages with AI assistance
-4. **Component Extraction** - Extracted and remixed components from Bootstrap examples
-5. **Styling** - Applied Bootstrap classes for responsive design
-6. **Enhancement** - Added custom JavaScript for form functionality
-7. **Testing** - Verified responsiveness across different screen sizes
+## 🌐 Live Demo
 
-### Tools and Resources Used
-- **Kiro Editor** - Primary development environment with AI integration
-- **Claude Sonnet 4.0 AI** - AI assistant for code generation, structure, and best practices
-- **Bootstrap 5 Documentation** - Official component reference
-- **Bootstrap Examples Folder** - Direct inspiration and component extraction from official examples
-- **Bootstrap Icons** - Consistent iconography
-- **Git & GitHub** - Version control and deployment
+- **GitHub Repository**: [https://github.com/[your-username]/bootstrap-task2-templating](https://github.com/[your-username]/bootstrap-task2-templating)
+- **Live Website**: [https://[your-deployment-url]](https://[your-deployment-url])
 
-### Challenges and Solutions
-- **Component Integration** - Used Claude Sonnet 4.0 AI to effectively combine multiple Bootstrap components
-- **Responsive Design** - Mastered Bootstrap's grid system and utility classes with AI guidance
-- **Form Validation** - Implemented client-side validation with Bootstrap styles using AI-generated code
-- **Consistent Styling** - Maintained design consistency across all pages with AI assistance
-- **Example Analysis** - AI helped analyze and extract patterns from Bootstrap examples folder
+> **Note**: Replace the placeholder URLs above with your actual repository and deployment links.
 
-### Time Investment
-- **Total Time**: Approximately 3-4 hours (significantly reduced with AI assistance)
-- **Planning & AI Setup**: 30 minutes
-- **AI-Assisted Development**: 2-2.5 hours
-- **Testing & Refinement**: 30-60 minutes
-- **AI Efficiency**: Development time reduced by ~50% using Claude Sonnet 4.0 and Kiro Editor
+## 📋 Available Scripts
 
-### Key Learnings
-- **AI-Assisted Development** - Leveraged Claude Sonnet 4.0 AI for efficient code generation and problem-solving
-- **Kiro Editor Integration** - Experienced seamless AI integration within the development environment
-- **Bootstrap 5 Mastery** - Learned utility-first approach for rapid development through AI guidance
-- **Component Analysis** - Used AI to analyze and extract patterns from official Bootstrap examples
-- **Semantic HTML** - Importance of proper HTML structure with AI best practices
-- **Mobile-First Design** - Responsive design principles enhanced by AI recommendations
-- **Efficient Workflow** - AI-powered development significantly accelerated the coding process
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Build optimized production files |
+| `npm run preview` | Preview production build locally |
 
-## 🚀 Deployment Instructions
+## ✨ Template Features Implemented
+
+### 🏗️ Template Architecture
+- **Base Layout (`layout.njk`)**: Common HTML structure, head, navigation, footer
+- **Page Templates**: Extend base layout with specific content
+- **Partials**: Reusable components (navbar, footer, icons)
+- **Variables**: Dynamic content injection (site name, year, page state)
+
+### 🎨 Component System
+- **Responsive Navigation**: Bootstrap navbar with active state management
+- **SVG Icon System**: Centralized icon definitions with reusable symbols
+- **Footer Component**: Consistent footer across all pages
+- **Dynamic Content**: Template variables for maintainable content
+
+### 📱 Pages Recreated
+1. **Home Page** (`index.html`)
+   - Hero section with call-to-action buttons
+   - Featured components grid
+   - Secondary hero with image placeholder
+
+2. **About Page** (`about.html`)
+   - Services and pricing section
+   - Pricing cards with comparison table
+   - Features showcase with icons
+
+3. **Contact Page** (`contact.html`)
+   - Comprehensive contact form with validation
+   - Contact information sidebar
+   - Form validation JavaScript
+
+## 🔧 Technical Implementation
+
+### Nunjucks Template Features
+```njk
+<!-- Template inheritance -->
+{% extends "layout.njk" %}
+
+<!-- Variables and conditionals -->
+{% set page = "home" %}
+{% if page == "home" %} active{% endif %}
+
+<!-- Includes for reusable components -->
+{% include "partials/navbar.njk" %}
+
+<!-- Content blocks -->
+{% block content %}
+<!-- Page-specific content -->
+{% endblock %}
+```
+
+### Vite Configuration Highlights
+```javascript
+// Multi-page application setup
+rollupOptions: {
+  input: {
+    main: 'src/index.html',
+    about: 'src/about.html',
+    contact: 'src/contact.html'
+  }
+}
+
+// Nunjucks integration
+nunjucks({
+  templatesDir: 'src/templates',
+  variables: {
+    siteName: 'Bootstrap Remix',
+    currentYear: new Date().getFullYear()
+  }
+})
+```
+
+## 🎯 Task Requirements Fulfilled
+
+✅ **Exact Visual Recreation**: Maintains identical styling, layout, and functionality from Task 1  
+✅ **Templating Engine**: Nunjucks used throughout for all HTML generation  
+✅ **Bundler Integration**: Vite handles build process and development workflow  
+✅ **Proper Folder Structure**: Organized src/templates/ and src/assets/ directories  
+✅ **Compiled Output**: Clean dist/ folder with optimized production files  
+✅ **Documentation**: Comprehensive README with setup and usage instructions  
+
+## 🚀 Deployment
+
+This project is configured for easy deployment on multiple platforms:
+
+### Netlify (Recommended)
+```bash
+# Push to GitHub first, then:
+# 1. Go to netlify.com
+# 2. "New site from Git"
+# 3. Connect your repository
+# 4. Deploy (auto-configured via netlify.toml)
+```
+
+### Vercel
+```bash
+# Push to GitHub first, then:
+# 1. Go to vercel.com  
+# 2. Import your repository
+# 3. Deploy (auto-configured via vercel.json)
+```
 
 ### GitHub Pages
-1. Push code to GitHub repository
-2. Go to repository Settings > Pages
-3. Select source branch (usually `main`)
-4. Access site at `https://yourusername.github.io/repository-name`
+```bash
+npm run build
+git add dist/
+git commit -m "Deploy to GitHub Pages"
+git subtree push --prefix dist origin gh-pages
+# Enable Pages in repository settings
+```
 
-### Netlify
-1. Connect GitHub repository to Netlify
-2. Configure build settings (if needed)
-3. Deploy automatically on push to main branch
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 
-## 📝 Future Enhancements
-- Add Google Maps integration to contact page
-- Implement backend form processing
-- Add more interactive components (carousel, accordion)
-- Enhance accessibility features
-- Add dark mode toggle
+## 🔍 Development Benefits
 
-## 🤖 AI Development Acknowledgment
+### Template System Advantages
+- **Maintainability**: Single source of truth for common elements
+- **Consistency**: Uniform structure across all pages
+- **Scalability**: Easy to add new pages using existing templates
+- **Developer Experience**: Clean separation of concerns
 
-This project was developed with significant assistance from **Claude Sonnet 4.0 AI** integrated within the **Kiro Editor**. The AI provided:
+### Build Process Benefits
+- **Performance**: Optimized assets and minified output
+- **Development Speed**: Hot reload and instant updates
+- **Modern Workflow**: ES modules and modern JavaScript features
+- **Asset Management**: Automatic optimization and bundling
 
-- **Code Generation** - Automated creation of HTML, CSS, and JavaScript components
-- **Bootstrap Expertise** - Analysis and extraction of patterns from official Bootstrap examples
-- **Best Practices** - Guidance on semantic HTML, responsive design, and accessibility
-- **Problem Solving** - Quick resolution of styling and functionality challenges
-- **Code Optimization** - Suggestions for cleaner, more maintainable code structure
+## 📊 Performance Optimizations
 
-The combination of Kiro Editor's AI integration and Claude Sonnet 4.0's capabilities enabled rapid, high-quality development while maintaining professional standards and best practices.
+- **CSS Optimization**: Minified and optimized stylesheets
+- **Asset Bundling**: Efficient resource loading
+- **Template Compilation**: Pre-compiled templates for faster rendering
+- **Modern Build**: Leverages latest web standards and optimizations
+
+## 🤝 Contributing
+
+To extend this project:
+
+1. **Add New Pages**: Create new `.html` files in `src/` extending `layout.njk`
+2. **Create Components**: Add reusable partials in `src/templates/partials/`
+3. **Modify Styles**: Update `src/assets/style.css` for custom styling
+4. **Update Configuration**: Modify `vite.config.js` for build customization
+
+## 📝 Task Completion Summary
+
+This implementation successfully demonstrates:
+- **Professional templating** with Nunjucks template engine
+- **Modern build process** using Vite bundler
+- **Component-based architecture** with reusable templates
+- **Exact recreation** of original Bootstrap 5 design
+- **Production-ready output** with optimized assets
+- **Developer-friendly workflow** with hot reload and modern tooling
+
+The project showcases how modern web development tools can enhance maintainability and developer experience while delivering identical end-user results.
 
 ---
 
-**Built with ❤️ using Bootstrap 5, Claude Sonnet 4.0 AI, and Kiro Editor**
+**Built with ❤️ using Nunjucks templating engine and Vite bundler**

@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-templating-task2",
+  "version": "1.0.0",
+  "description": "Task 2 - Bootstrap site with Nunjucks templating and Vite bundler",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev.js",
+    "build": "node build.js",
+    "preview": "node serve.js",
+    "serve": "npm run build && npm run preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "nunjucks": "^3.2.4"
+  }
+}
