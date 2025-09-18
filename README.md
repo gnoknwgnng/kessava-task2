@@ -45,8 +45,8 @@ This project recreates the Bootstrap 5 UI from Task 1 using modern web developme
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/[your-username]/bootstrap-task2-templating.git
-   cd bootstrap-task2-templating
+   git clone https://github.com/gnoknwgnng/kessava-task2.git
+   cd kessava-task2
    ```
 
 2. **Install dependencies**
@@ -76,10 +76,8 @@ This project recreates the Bootstrap 5 UI from Task 1 using modern web developme
 
 ## 🌐 Live Demo
 
-- **GitHub Repository**: [https://github.com/[your-username]/bootstrap-task2-templating](https://github.com/[your-username]/bootstrap-task2-templating)
-- **Live Website**: [https://[your-deployment-url]](https://[your-deployment-url])
-
-> **Note**: Replace the placeholder URLs above with your actual repository and deployment links.
+- **GitHub Repository**: [https://github.com/gnoknwgnng/kessava-task2](https://github.com/gnoknwgnng/kessava-task2)
+- **Live Website**: [Coming Soon - Will be deployed after upload]
 
 ## 📋 Available Scripts
 
