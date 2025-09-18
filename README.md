@@ -77,7 +77,7 @@ This project recreates the Bootstrap 5 UI from Task 1 using modern web developme
 ## 🌐 Live Demo
 
 - **GitHub Repository**: [https://github.com/gnoknwgnng/kessava-task2](https://github.com/gnoknwgnng/kessava-task2)
-- **Live Website**: [Coming Soon - Will be deployed after upload]
+- **Live Website**: [https://22-1-1qd3y3.netlify.app](https://22-1-1qd3y3.netlify.app)
 
 ## 📋 Available Scripts
 
